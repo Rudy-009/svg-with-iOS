@@ -10,6 +10,8 @@
 		6311AD9D2D587C1C004F3A92 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 6311AD9C2D587C1C004F3A92 /* Then */; };
 		6311ADA02D587C27004F3A92 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6311AD9F2D587C27004F3A92 /* SnapKit */; };
 		6311ADA32D587C42004F3A92 /* SDWebImageSVGNativeCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 6311ADA22D587C42004F3A92 /* SDWebImageSVGNativeCoder */; };
+		63B68D5F2D5CE42C00CACCEE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 63B68D5E2D5CE42C00CACCEE /* Kingfisher */; };
+		63B68D642D5CE58E00CACCEE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 63B68D632D5CE58E00CACCEE /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B68D642D5CE58E00CACCEE /* Alamofire in Frameworks */,
+				63B68D5F2D5CE42C00CACCEE /* Kingfisher in Frameworks */,
 				6311AD9D2D587C1C004F3A92 /* Then in Frameworks */,
 				6311ADA02D587C27004F3A92 /* SnapKit in Frameworks */,
 				6311ADA32D587C42004F3A92 /* SDWebImageSVGNativeCoder in Frameworks */,
@@ -90,6 +94,8 @@
 				6311AD9C2D587C1C004F3A92 /* Then */,
 				6311AD9F2D587C27004F3A92 /* SnapKit */,
 				6311ADA22D587C42004F3A92 /* SDWebImageSVGNativeCoder */,
+				63B68D5E2D5CE42C00CACCEE /* Kingfisher */,
+				63B68D632D5CE58E00CACCEE /* Alamofire */,
 			);
 			productName = "svg-with-iOS";
 			productReference = 6311AD7F2D587BA8004F3A92 /* svg-with-iOS.app */;
@@ -123,6 +129,8 @@
 				6311AD9B2D587C1C004F3A92 /* XCRemoteSwiftPackageReference "Then" */,
 				6311AD9E2D587C27004F3A92 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				6311ADA12D587C42004F3A92 /* XCRemoteSwiftPackageReference "SDWebImageSVGNativeCoder" */,
+				63B68D5D2D5CE42C00CACCEE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				63B68D622D5CE58E00CACCEE /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6311AD802D587BA8004F3A92 /* Products */;
@@ -376,6 +384,22 @@
 				minimumVersion = 0.2.0;
 			};
 		};
+		63B68D5D2D5CE42C00CACCEE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+		63B68D622D5CE58E00CACCEE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -393,6 +417,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6311ADA12D587C42004F3A92 /* XCRemoteSwiftPackageReference "SDWebImageSVGNativeCoder" */;
 			productName = SDWebImageSVGNativeCoder;
+		};
+		63B68D5E2D5CE42C00CACCEE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63B68D5D2D5CE42C00CACCEE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		63B68D632D5CE58E00CACCEE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63B68D622D5CE58E00CACCEE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -82,7 +82,7 @@ class SVGImageView: UIView {
             make.height.equalTo(200)
         }
         
-        pngImageView.load(url: URL(string: "https://d1le4wcgenmery.cloudfront.net/de3a3b57-8957-4106-90d4-af828c8f3ba3아기 비숑.png")!)
+        // pngImageView.load(url: URL(string: "https://d1le4wcgenmery.cloudfront.net/de3a3b57-8957-4106-90d4-af828c8f3ba3아기 비숑.png")!)
     }
     
     required init?(coder: NSCoder) {
@@ -90,34 +90,34 @@ class SVGImageView: UIView {
     }
 }
 
-extension UIButton{
-    func load(url: URL){
-        DispatchQueue.global().async{
-            [weak self] in
-            if let data = try? Data(contentsOf: url){
-                if let image = UIImage(data: data){
-                    DispatchQueue.main.async{
-                        self?.setImage(image, for: .normal)
-                    }
-                }
-            }
-        }
-    }
-}
-
-extension UIImageView{
-    func load(url: URL){
-        DispatchQueue.global().async{
-            [weak self] in
-            if let data = try? Data(contentsOf: url){
-                if let image = UIImage(data: data){
-                    DispatchQueue.main.async{
-                        self?.image = image
-                    }
-                }
-            }
-        }
-    }
-}
+//extension UIButton{
+//    func load(url: URL){
+//        DispatchQueue.global().async{
+//            [weak self] in
+//            if let data = try? Data(contentsOf: url){
+//                if let image = UIImage(data: data){
+//                    DispatchQueue.main.async{
+//                        self?.setImage(image, for: .normal)
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}
+//
+//extension UIImageView{
+//    func load(url: URL){
+//        DispatchQueue.global().async{
+//            [weak self] in
+//            if let data = try? Data(contentsOf: url){
+//                if let image = UIImage(data: data){
+//                    DispatchQueue.main.async{
+//                        self?.image = image
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}
 
 
